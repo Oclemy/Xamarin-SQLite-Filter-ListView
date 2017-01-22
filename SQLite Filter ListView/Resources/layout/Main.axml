@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#009688"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#d9edf7"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <TextView
+            android:text="Name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="#000" />
+        <EditText
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:id="@+id/nameEditTxt"
+            android:textColor="#000" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#efefef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveBtn"
+            android:background="#2f9bc1"
+            android:textColor="#000" />
+        <Button
+            android:text="Retrieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/retrieveBtn"
+            android:background="#2f9bc1"
+            android:textColor="#000" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#efefef"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SearchView
+            android:id="@+id/sv"
+            android:textColor="#000"
+            android:background="#33363c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#33363c" />
+    </LinearLayout>
+</LinearLayout>
